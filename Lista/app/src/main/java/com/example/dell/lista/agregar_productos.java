@@ -4,15 +4,39 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 
 public class agregar_productos extends ActionBarActivity {
+    Spinner spinner;
 
+    ArrayAdapter <CharSequence> adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_productos);
+
+        spinner=(Spinner) findViewById(R.id.sp_categoria);
+
+
+        adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item );
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.add("Lacteos");
+        adapter.add("Carnes rojas");
+        adapter.add("Carnes blancas");
+        adapter.add("Jugos");
+        adapter.add("Refrescos");
+        adapter.add("Dulces");
+        adapter.add("Verduras");
+        adapter.add("Frutas");
+        adapter.add("Semilla");
+        adapter.add("Agua");
+
+        spinner.setAdapter(adapter);
+
     }
+
 
 
     @Override
