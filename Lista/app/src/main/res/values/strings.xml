@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lista</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_opciones">opciones</string>
+    <string name="ver_listas">Ver listas</string>
+    <string name="agregar_lista">Agregar lista</string>
+    <string name="boton_add_lista">Listo</string>
+    <string name="agregar_producto">Agregar producto</string>
+    <string name="title_activity_ver_listas">ver_listas</string>
+    <string name="title_activity_agregar_lista">agregar_lista</string>
+    <string name="title_activity_agregar_listas">agregar_listas</string>
+    <string name="title_activity_agregar_productos">agregar_productos</string>
+
+</resources>

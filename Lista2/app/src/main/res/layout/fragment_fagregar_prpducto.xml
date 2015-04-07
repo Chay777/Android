@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.dell.lista.Fagregar_prpducto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp">
+
+            <Spinner
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_lista"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_clave"
+                android:layout_gravity="center_horizontal"
+                android:hint="Clave del producto" />
+
+            <EditText
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_nombre_producto"
+                android:layout_gravity="center_horizontal"
+                android:hint="Nombre del producto" />
+
+            <Spinner
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_categoria"
+                android:layout_gravity="center_horizontal" />
+
+            <Spinner
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_unidad"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/ed_cantidad"
+                android:layout_gravity="center_horizontal"
+                android:hint="Cantidad"
+                android:numeric="decimal" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/et_precio"
+                android:layout_gravity="center_horizontal"
+                android:hint="Precio"
+                android:numeric="decimal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar"
+                    android:id="@+id/btn_agregar_producto"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

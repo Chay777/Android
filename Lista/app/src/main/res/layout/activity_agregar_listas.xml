@@ -19,7 +19,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/et_lista"
         android:layout_marginTop="31dp"
         android:layout_below="@+id/tv_Nombre_lista"
         android:layout_alignRight="@+id/tv_Nombre_lista"
@@ -34,6 +34,6 @@
         android:text="@string/boton_add_lista"
         android:id="@+id/btn_add_lista"
         android:layout_marginTop="38dp"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/et_lista"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
