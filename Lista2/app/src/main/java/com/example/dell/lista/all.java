@@ -1,5 +1,7 @@
 package com.example.dell.lista;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -19,7 +21,6 @@ public class all extends ActionBarActivity  implements ActionBar.TabListener, Vi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all);
-
 
 
 

@@ -75,7 +75,7 @@
             <EditText
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
-                android:inputType="number"
+                android:inputType="number|numberDecimal"
                 android:ems="10"
                 android:id="@+id/et_cantidad"
                 android:layout_gravity="center_horizontal"
@@ -85,7 +85,7 @@
             <EditText
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
-                android:inputType="number"
+                android:inputType="number|numberDecimal"
                 android:ems="10"
                 android:id="@+id/et_precio"
                 android:layout_gravity="center_horizontal"

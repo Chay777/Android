@@ -32,13 +32,7 @@ DbHelper helper;
         DataBaseManager manejador = new DataBaseManager(getActivity());
         final ListView lista_de_listas = (ListView)getActivity().findViewById(R.id.lista_de_listas);
 
-       
-
-
-
-
-
-
+// pendiente mostras las listas en un listview
 
     }
 }

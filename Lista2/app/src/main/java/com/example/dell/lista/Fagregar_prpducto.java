@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -105,17 +106,17 @@ public class Fagregar_prpducto extends Fragment {
                 new DataBaseManager(getActivity()).insetar_producto(
 
 
+
                         lista_origen.getSelectedItem().toString(),
                         nombre_producto.getText().toString(),
                         categoria.getSelectedItem().toString(),
                         unidad.getSelectedItem().toString(),
-                        Integer.parseInt(cantidad.getText().toString()),
-                        Integer.parseInt(precio.getText().toString()),
+                        Double.parseDouble(cantidad.getText().toString()),
+                        Double.parseDouble(precio.getText().toString()),
                         clave.getText().toString());
                         nombre_producto.setText("");
-                        cantidad.setText("0");
-                        precio.setText("0");
                         clave.setText(claves());
+                Toast.makeText (getActivity(),"Tu producto se ha agregado exitosamente",Toast.LENGTH_SHORT).show();
 
 
             }

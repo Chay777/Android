@@ -65,7 +65,7 @@ private DbHelper helper;
 
         return valores;
     }
-    public ContentValues generarvalores_producto(String lista_origen,String nombre_producto,String categoria,String unidad,int cantidad,int precio, String clave)
+    public ContentValues generarvalores_producto(String lista_origen,String nombre_producto,String categoria,String unidad,double cantidad,double precio, String clave)
     {
         ContentValues valores = new ContentValues();
         valores.put(columna_lista_origen,lista_origen);
@@ -85,7 +85,7 @@ private DbHelper helper;
 
 
     }
-    public void insetar_producto (String lista_origen,String nombre_producto,String categoria,String unidad,int cantidad,int precio,String clave)
+    public void insetar_producto (String lista_origen,String nombre_producto,String categoria,String unidad,double cantidad,double precio,String clave)
     {
 
         //db.insert(Table_Name2,null,generarvalores_producto(lista_origen,nombre_producto,categoria,unidad,cantidad,precio));
