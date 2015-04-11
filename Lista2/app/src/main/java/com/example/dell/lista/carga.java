@@ -1,6 +1,10 @@
 package com.example.dell.lista;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,10 +16,13 @@ import java.util.TimerTask;
 
 public class carga extends ActionBarActivity {
     private static final long SPLASH_SCREEN_DELAY = 3000;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carga);
+
 
         TimerTask task = new TimerTask() {
             @Override
@@ -61,4 +68,6 @@ public class carga extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

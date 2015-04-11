@@ -19,22 +19,46 @@
             <Spinner
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/sp_lista"
+                android:id="@+id/sp_lista_origen"
                 android:layout_gravity="center_horizontal" />
 
-            <EditText
-                android:layout_width="310dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_clave"
-                android:layout_gravity="center_horizontal"
-                android:hint="Clave del producto" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp">
+
+                <EditText
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_clave"
+                    android:layout_gravity="right"
+                    android:hint="Clave del producto"
+                    android:editable="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/textView"
+                    android:layout_toEndOf="@+id/textView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Clave:"
+                    android:id="@+id/textView"
+                    android:layout_alignTop="@+id/et_clave"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp" />
+            </RelativeLayout>
 
             <EditText
                 android:layout_width="307dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/et_nombre_producto"
                 android:layout_gravity="center_horizontal"
-                android:hint="Nombre del producto" />
+                android:hint="Nombre del producto"
+                android:inputType="text" />
 
             <Spinner
                 android:layout_width="310dp"
